@@ -13,13 +13,15 @@
 
 # Good to review
 
-http://infolab.stanford.edu/~ullman/mmds/ch4.pdf
-
+## InfluxData TICK stack
 https://www.influxdata.com/university/ (Getting Started Series)
 
 https://www.influxdata.com/resources/watch-everything-watch-anything-anomaly-detection-by-nathaniel-cook/
 
 https://www.influxdata.com/resources/structured-logging/
+
+## Streams in general
+http://infolab.stanford.edu/~ullman/mmds/ch4.pdf
 
 https://medium.com/stream-processing/what-is-stream-processing-1eadfca11b97
 
