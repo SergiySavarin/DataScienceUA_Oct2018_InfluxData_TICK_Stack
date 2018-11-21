@@ -16,7 +16,13 @@
 ## InfluxData TICK stack
 https://www.influxdata.com/university/ (Getting Started Series)
 
+https://docs.influxdata.com/influxdb/v1.7/concepts/key_concepts/
+
+https://docs.influxdata.com/kapacitor/v1.5/tick/introduction/
+
 https://www.influxdata.com/resources/watch-everything-watch-anything-anomaly-detection-by-nathaniel-cook/
+
+https://www.influxdata.com/training/7-intro-kapacitor-alerting-anomaly-detection/
 
 https://www.influxdata.com/resources/structured-logging/
 
