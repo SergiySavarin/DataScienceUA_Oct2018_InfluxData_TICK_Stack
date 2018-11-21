@@ -4,11 +4,11 @@
     IS COMMING...
 
 
-# Knowledge required
+# Knowledge level required
 
-    - Python basic
-    - SQL basic
-    - Docker basic
+    - Python (basic)
+    - SQL (basic)
+    - Docker (basic)
 
 
 # Good to review
