@@ -9,9 +9,10 @@ Install [Docker](https://www.docker.com/get-started) and
 [Docker Compose](https://docs.docker.com/compose/install/) for Mac/Linux/Windows
 
     git clone git@github.com:SergiySavarin/DataScienceUA_Oct2018_InfluxData_TICK_Stack.git
-    cd src/sandbox
+    cd DataScienceUA_Oct2018_InfluxData_TICK_Stack/src/sandbox
     ./sanbox up
-    cd src/producer
+
+    cd ../producer
     docker build -t producer1 .
 
 # Knowledge level required
