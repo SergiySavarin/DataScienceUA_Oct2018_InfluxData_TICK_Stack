@@ -58,3 +58,5 @@ bm = BinanceSocketManager(client)
 for symbol in symbols:
     bm.start_aggtrade_socket(symbol, process_message)
 bm.start()
+
+#'https://hooks.slack.com/services/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'

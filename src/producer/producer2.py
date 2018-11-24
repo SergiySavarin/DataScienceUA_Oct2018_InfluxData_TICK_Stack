@@ -56,22 +56,22 @@ def process_message(msg):
 
 from binance.websockets import BinanceSocketManager
 bm = BinanceSocketManager(client)
-while True
-    for i in range(5)
-        for symbol in symbols:
-            DATA.append({
-                'measurement': 'trades',
-                'time': datetime.utcnow(),
-                'tags': {
-                    'symbol': symbol,
-                    'exchange': 'BINANCE',
-                    'provider': 'BINANCE_SOCKET'
-                },
-                'fields': {
-                    'price': float(random.randint(0.00006234, 4000)),
-                    'volume': float(random.randint(0.0004856, 463000))
-                }
-            })
+while True:
+    for symbol in symbols:
+        DATA.append({
+            'measurement': 'trades',
+            'time': datetime.utcnow(),
+            'tags': {
+                'symbol': symbol,
+                'exchange': 'BINANCE',
+                'provider': 'BINANCE_SOCKET'
+            },
+            'fields': {
+                'price': float(random.randint(1, 4000)),
+                'volume': float(random.randint(1, 463000))
+            }
+        })
+        time.sleep(1)
     if (time.time() - TIME) > 3:
         influx_client.write_points(DATA)
         DATA = []
