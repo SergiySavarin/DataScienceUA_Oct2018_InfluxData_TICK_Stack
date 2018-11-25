@@ -1,6 +1,12 @@
 # Project description
 
-Basic of using InfluxData stack.
+Basic of using InfluxData stack. 
+[Google Form for workshop materials]
+(https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdx-MFpdefBevuZV-bNsk-xX_SMqrSyatVf5u0w_FWQvb3Org%2Fviewform%3Ffbclid%3DIwAR3STIYPv7eXRMsiAOWW6HEsb4s1qeUsfqOU5MEa9mFkUTsKBzx3Bi-NWvw&h=AT0PtuNUkKaFTHzH5RdXVUmYueG9iBH85PVMeX8Ec1Fzlfkzj0g-_QZYyYVQyGTIlsceDWDT7z6F4J0ojYikoPTmZwjG9x1vT3h-rDxW-w_czdarR_tID3WVtdRldA) 
+[Workshop Slides. TICK Stack basic info.]
+(https://www.slideshare.net/sergiysavarin/influx-data-basic)
+
+
 
 First of all [Install](#Install) the project and run `sandbox` and `producer1`.
 
@@ -12,10 +18,6 @@ create new Kapacitor tasts:
 3. copy `src/producer/batch` script text to new created batch task.
 4. Save and enable batch task.
 3. use tha same steps to create stream task with script text from `src/producer/stream`
-
-[Google Form for workshop materials](https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdx-MFpdefBevuZV-bNsk-xX_SMqrSyatVf5u0w_FWQvb3Org%2Fviewform%3Ffbclid%3DIwAR3STIYPv7eXRMsiAOWW6HEsb4s1qeUsfqOU5MEa9mFkUTsKBzx3Bi-NWvw&h=AT0PtuNUkKaFTHzH5RdXVUmYueG9iBH85PVMeX8Ec1Fzlfkzj0g-_QZYyYVQyGTIlsceDWDT7z6F4J0ojYikoPTmZwjG9x1vT3h-rDxW-w_czdarR_tID3WVtdRldA)
-
-[Workshop Slides. TICK Stack basic info.](https://www.slideshare.net/sergiysavarin/influx-data-basic)
 
 # Install
 
