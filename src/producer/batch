@@ -1,0 +1,11 @@
+batch
+    |query('''SELECT sum("volume") AS "volume", mean("price") AS "price" FROM "raw_trade_data"."autogen"."trades"''')
+        .period(5m)
+        .every(5m)
+        .groupBy(time(5m), 'exchange', 'symbol')
+    |influxDBOut()
+        .create()
+        .database('aggregated')
+        .retentionPolicy('autogen')
+        .measurement('agg_5m')
+        .precision('s')
