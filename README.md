@@ -1,10 +1,14 @@
 
+[Install](#Install)[Google Form](https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdx-MFpdefBevuZV-bNsk-xX_SMqrSyatVf5u0w_FWQvb3Org%2Fviewform%3Ffbclid%3DIwAR3STIYPv7eXRMsiAOWW6HEsb4s1qeUsfqOU5MEa9mFkUTsKBzx3Bi-NWvw&h=AT0PtuNUkKaFTHzH5RdXVUmYueG9iBH85PVMeX8Ec1Fzlfkzj0g-_QZYyYVQyGTIlsceDWDT7z6F4J0ojYikoPTmZwjG9x1vT3h-rDxW-w_czdarR_tID3WVtdRldA)[Workshop Slides](https://www.slideshare.net/sergiysavarin/influx-data-basic)
+
 # Project description
 
 Basic of using InfluxData stack.
-First of all install the project and run producer1.
+
+First of all install the project and run `sandbox` and `producer1`.
+
 Then, when data will start comming to `raw_trade_data` database
-create new Kapacitor tasts for:
+create new Kapacitor tasts:
 
 1. enter [Kapacitor](http://localhost:8888/sources/10000/alert-rules)
 2. created new batch task.
@@ -12,8 +16,6 @@ create new Kapacitor tasts for:
 4. Save and enable batch task.
 3. use tha same steps to create stream task with script text from `src/producer/stream`
 
-
-[Google Form](https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdx-MFpdefBevuZV-bNsk-xX_SMqrSyatVf5u0w_FWQvb3Org%2Fviewform%3Ffbclid%3DIwAR3STIYPv7eXRMsiAOWW6HEsb4s1qeUsfqOU5MEa9mFkUTsKBzx3Bi-NWvw&h=AT0PtuNUkKaFTHzH5RdXVUmYueG9iBH85PVMeX8Ec1Fzlfkzj0g-_QZYyYVQyGTIlsceDWDT7z6F4J0ojYikoPTmZwjG9x1vT3h-rDxW-w_czdarR_tID3WVtdRldA)
 
 # Install
 
@@ -51,10 +53,6 @@ docker build -f Dockerfile.p1 -t producer1 .
     - Python (basic)
     - SQL (basic)
     - Docker (basic)
-
-# Presentation
-
-[Slides](https://www.slideshare.net/sergiysavarin/influx-data-basic)
 
 # Good to review
 
