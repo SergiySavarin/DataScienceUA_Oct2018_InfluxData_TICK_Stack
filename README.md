@@ -41,6 +41,9 @@ export INFLUX_CONTAINER_NAME=$(docker-compose ps | grep sandbox_influxdb | awk '
 # Build docker for producer
 cd ../producer
 docker build -f Dockerfile.p1 -t producer1 .
+
+# Run producer1
+./run.sh producer1
 ```
 
 # Knowledge level required
