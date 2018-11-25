@@ -1,19 +1,45 @@
 
 # Project description
 
-    IS COMMING...
+Basic of using InfluxData stack.
+First of all install the project and run producer1.
+Then, when data will start comming to `raw_trade_data` database
+create new Kapacitor tasts for:
+
+1. enter [Kapacitor](http://localhost:8888/sources/10000/alert-rules)
+2. copy `batch` script text (path: `src/producer/batch`) to new created batch task. Save and enable.
+3. copy `stream` script text (path: `src/producer/stream`) to new created stream task. Save and enable.
+
+
+[Google Form](https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdx-MFpdefBevuZV-bNsk-xX_SMqrSyatVf5u0w_FWQvb3Org%2Fviewform%3Ffbclid%3DIwAR3STIYPv7eXRMsiAOWW6HEsb4s1qeUsfqOU5MEa9mFkUTsKBzx3Bi-NWvw&h=AT0PtuNUkKaFTHzH5RdXVUmYueG9iBH85PVMeX8Ec1Fzlfkzj0g-_QZYyYVQyGTIlsceDWDT7z6F4J0ojYikoPTmZwjG9x1vT3h-rDxW-w_czdarR_tID3WVtdRldA)
 
 # Install
 
 Install [Docker](https://www.docker.com/get-started) and
 [Docker Compose](https://docs.docker.com/compose/install/) for Mac/Linux/Windows
 
+    ```
+    # Run sandbox
     git clone git@github.com:SergiySavarin/DataScienceUA_Oct2018_InfluxData_TICK_Stack.git
     cd DataScienceUA_Oct2018_InfluxData_TICK_Stack/src/sandbox
-    ./sanbox up
+    ./sandbox up
 
+    # Create influx database for producer
+    ./sandbox influxdb cli
+    Using latest, stable releases
+    Entering the influx cli...
+    Connected to http://localhost:8086 version 1.7.1
+    InfluxDB shell version: 1.7.1
+    Enter an InfluxQL query
+    > CREATE DATABASE raw_trade_data
+
+    # Set influcontainer name variable
+    export INFLUX_CONTAINER_NAME=$(docker-compose ps | grep sandbox_influxdb | awk '{print $1}')
+
+    # Build docker for producer
     cd ../producer
-    docker build -t producer1 .
+    docker build -f Dockerfile.p1 -t producer1 .
+    ```
 
 # Knowledge level required
 
@@ -21,6 +47,9 @@ Install [Docker](https://www.docker.com/get-started) and
     - SQL (basic)
     - Docker (basic)
 
+# Presentation
+
+[Slides](https://www.slideshare.net/sergiysavarin/influx-data-basic)
 
 # Good to review
 
