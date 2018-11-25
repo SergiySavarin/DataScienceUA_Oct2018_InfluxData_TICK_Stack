@@ -20,28 +20,28 @@ create new Kapacitor tasts for:
 Install [Docker](https://www.docker.com/get-started) and
 [Docker Compose](https://docs.docker.com/compose/install/) for Mac/Linux/Windows
 
-    ```
-    # Run sandbox
-    git clone git@github.com:SergiySavarin/DataScienceUA_Oct2018_InfluxData_TICK_Stack.git
-    cd DataScienceUA_Oct2018_InfluxData_TICK_Stack/src/sandbox
-    ./sandbox up
+```
+# Run sandbox
+git clone git@github.com:SergiySavarin/DataScienceUA_Oct2018_InfluxData_TICK_Stack.git
+cd DataScienceUA_Oct2018_InfluxData_TICK_Stack/src/sandbox
+./sandbox up
 
-    # Create influx database for producer
-    ./sandbox influxdb cli
-    Using latest, stable releases
-    Entering the influx cli...
-    Connected to http://localhost:8086 version 1.7.1
-    InfluxDB shell version: 1.7.1
-    Enter an InfluxQL query
-    > CREATE DATABASE raw_trade_data
+# Create influx database for producer
+./sandbox influxdb cli
+Using latest, stable releases
+Entering the influx cli...
+Connected to http://localhost:8086 version 1.7.1
+InfluxDB shell version: 1.7.1
+Enter an InfluxQL query
+> CREATE DATABASE raw_trade_data
 
-    # Set influcontainer name variable
-    export INFLUX_CONTAINER_NAME=$(docker-compose ps | grep sandbox_influxdb | awk '{print $1}')
+# Set influcontainer name variable
+export INFLUX_CONTAINER_NAME=$(docker-compose ps | grep sandbox_influxdb | awk '{print $1}')
 
-    # Build docker for producer
-    cd ../producer
-    docker build -f Dockerfile.p1 -t producer1 .
-    ```
+# Build docker for producer
+cd ../producer
+docker build -f Dockerfile.p1 -t producer1 .
+```
 
 # Knowledge level required
 
