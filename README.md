@@ -20,7 +20,7 @@ create new Kapacitor tasts for:
 Install [Docker](https://www.docker.com/get-started) and
 [Docker Compose](https://docs.docker.com/compose/install/) for Mac/Linux/Windows
 
-```
+```bash
 # Run sandbox
 git clone git@github.com:SergiySavarin/DataScienceUA_Oct2018_InfluxData_TICK_Stack.git
 cd DataScienceUA_Oct2018_InfluxData_TICK_Stack/src/sandbox
